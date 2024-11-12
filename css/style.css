@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: "Tajawal", sans-serif;
+background: linear-gradient(45deg, rgb(30, 2, 43), rgb(68, 6, 97));
+background-size: cover;
+}
+header{
+    color: white;
+    padding: 0 40px;
+    margin: 0px 0 5px;
+}
+header h1{
+font-size: 150px;
+font-weight: 400;
+padding: 0;
+}
+header h6{
+font-size: 30px;
+font-weight: 400;
+padding-right: 10px;
+}
+hr{
+    margin: 0 50px;
+border-color: rgb(104, 22, 182);
+}
+#cards{
+margin-top: 40px;
+padding: 0 50px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+gap: 30px;
+}
+.card{
+    background-color: white;
+    /* width: 200px ; */
+    height: 240px;
+}
+.card h4{
+    color: white;
+    background: linear-gradient(45deg, rgb(32, 4, 37), rgb(103, 5, 112));
+    height: 30%;
+    padding: 5px 10px 5px 0;
+font-size: 24px;
+font-weight: 500;
+}
+.card .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 50px;
+}
+.city-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+
+}
+.city-select select{
+    background-color: transparent;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 12px;
+    color: white;
+    font-family: "Tajawal", sans-serif;
+font-weight: 500;
+}
+option{
+    color: black;
+    font-weight: 500;
+}
