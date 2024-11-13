@@ -84,7 +84,10 @@ function city(){
   document.getElementById("head").innerHTML = cityname;
 
   axios.get(`https://cors-anywhere.herokuapp.com/https://api.aladhan.com/v1/timingsByCity?city=${cityname}&country=tr&month=11&year=2024`)
-  .then((response) =>{
+        headers: {
+    'X-Requested-With': 'XMLHttpRequest'
+  }
+    .then((response) =>{
     let data = response.data.data.timings;
     let content = `
             <div class="card">
