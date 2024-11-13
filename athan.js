@@ -1,7 +1,8 @@
 
 function time(){
-  axios.get(`https://cors-anywhere.herokuapp.com/https://api.aladhan.com/v1/timingsByCity?city=اسطنبول&country=tr&month=11&year=2024`, headers: {
+  axios.get(`https://cors-anywhere.herokuapp.com/https://api.aladhan.com/v1/timingsByCity?city=اسطنبول&country=tr&month=11&year=2024`,{ headers: {
     'X-Requested-With': 'XMLHttpRequest'
+  }
   } )
       
 .then((response) =>{
@@ -83,8 +84,9 @@ function city(){
   let cityname = document.getElementById("cityName").value
   document.getElementById("head").innerHTML = cityname;
 
-  axios.get(`https://cors-anywhere.herokuapp.com/https://api.aladhan.com/v1/timingsByCity?city=${cityname}&country=tr&month=11&year=2024`, headers: {
+  axios.get(`https://cors-anywhere.herokuapp.com/https://api.aladhan.com/v1/timingsByCity?city=${cityname}&country=tr&month=11&year=2024`, {headers: {
     'X-Requested-With': 'XMLHttpRequest'
+  }
   })
         
     .then((response) =>{
