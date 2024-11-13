@@ -1,11 +1,9 @@
-// function times(){
-//   let times = new Date();
-//    let ti = times.getDate() + "/" + (times.getMonth() + 1) + "/" + times.getFullYear() + " | " + times.getHours() + ":" + times.getMinutes();
-// return ti;
-//   }
-//   document.getElementById("day").innerHTML = times()
+
 function time(){
   axios.get(`https://cors-anywhere.herokuapp.com/https://api.aladhan.com/v1/timingsByCity?city=اسطنبول&country=tr&month=11&year=2024`)
+      headers: {
+    'X-Requested-With': 'XMLHttpRequest'
+  }
 .then((response) =>{
   let data = response.data.data.timings;
   let content = `
