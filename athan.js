@@ -85,7 +85,7 @@ function city(){
   let cityname = document.getElementById("cityName").value
   document.getElementById("head").innerHTML = cityname;
 
-  axios.get(`http://api.aladhan.com/v1/timingsByCity?city=${cityname}&country=tr&month=11&year=2024`)
+  axios.get(`https://cors-anywhere.herokuapp.com/http://api.aladhan.com/v1/timingsByCity?city=${cityname}&country=tr&month=11&year=2024`)
   .then((response) =>{
     let data = response.data.data.timings;
     let content = `
