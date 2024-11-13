@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 body{
 font-family: "Tajawal", sans-serif;
 background: linear-gradient(45deg, rgb(30, 2, 43), rgb(68, 6, 97));
-background-size: cover;
+height: 100vh;
 }
 header{
     color: white;
@@ -46,8 +46,8 @@ gap: 30px;
 }
 @media (max-width : 768px){
     #cards {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+gap: 20px;
     }
 
 }
